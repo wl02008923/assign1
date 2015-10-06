@@ -19,7 +19,7 @@ void setup () {
 
 
   int x = 0;
-  int y = x-640;
+  int y = -640;
   int z = 50;
   float a = random(640);
   float b = random(480);
@@ -33,16 +33,16 @@ void draw() {
   
     
 
-  if(x%640==0){
-    x = y-640;
-    x++;
-    y++;
-    
+  while(x>640){
+    x = -640;
+  }
+  while(y>640){
+    y = -640;
   }
 
   
   
-  image(enemy,z,240);
+  image(enemy,z,160);
   
   z++;
   z %=640;
