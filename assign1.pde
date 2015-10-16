@@ -21,8 +21,8 @@ void setup () {
   int x = 0;
   int y = -640;
   int z = 50;
-  float a = random(640);
-  float b = random(480);
+  float a = random(560);
+  float b = random(420);
   float c = random(150);
   
   
